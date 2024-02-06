@@ -5,7 +5,7 @@
         <img src="{{asset('images/vc-header-bg.png')}}" alt="Hub71" class="img-fluid p-0"/>
 
         <div class="logo-wrapper position-absolute w-100 top-0">
-            <div class="container py-5">
+            <div class="container py-md-5 py-3">
                 <div class="row">
                     <div class="col-12 text-end">
                         <a href="{{route('home')}}">
@@ -88,7 +88,7 @@
                 </span>
                 <div class="row g-0">
                     <div class="col-md-4 p-3 logo-img">
-                        <div class="d-flex align-items-center justify-content-center h-100 border border-primary rounded rounded-4">
+                        <div class="logo-holder d-flex align-items-center justify-content-center h-100 border border-primary rounded rounded-4">
                             <div class="card-img text-center p-3">
                                 @if (file_exists(public_path($image_path = 'images/logos/' . $startup->id . '.png')))
                                     <img src="{{asset($image_path)}}" alt="Ovasave"

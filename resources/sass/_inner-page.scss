@@ -8,10 +8,22 @@
     &.header-text {
       margin-top: 70px;
     }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 26px;
+      &.header-text {
+        margin-top: 10px;
+      }
+    }
+
   }
 
   .logo-img {
     min-height: 220px;
+  }
+
+  .logo-holder {
+    background-color: #ffffff;
   }
 
   .card {
@@ -45,6 +57,10 @@
 
   .card-text {
     font-size: 14px;
+  }
+
+  .card-img img {
+    max-height: 190px;
   }
 
   h5, h4 {
