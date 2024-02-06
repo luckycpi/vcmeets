@@ -128,7 +128,7 @@
                                 </div>
                                 <div class="col-6 col-md-3">
                                     <h5>Funds Raised</h5>
-                                    <span>{{$startup->funds_raised}} {{$startup->fund_value}}</span>
+                                    <span>{{$startup->funds_raised}}</span>
                                 </div>
 
                                 <div class="col-md-6 mt-3 mt-md-0 d-flex justify-content-end align-items-end">
