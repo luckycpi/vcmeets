@@ -7,6 +7,12 @@ html, body {
   max-width: 100px;
 }
 
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
 .processing-wrapper {
   top: 50%;
   left: 0;
