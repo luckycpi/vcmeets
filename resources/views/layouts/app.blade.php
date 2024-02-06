@@ -9,6 +9,21 @@
 
     <title>{{ config('app.name', 'Hub71') }}</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
+    <link rel="manifest" href="{{asset('site.webmanifest')}}">
+    <link rel="mask-icon" href="{{asset('safari-pinned-tab.svg')}}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Empowering today. Impacting tomorrow.">
+    <meta property="og:site_name" content="Hub71 Impact">
+    <meta property="og:url" content="https://vcmeets.hub71impact.com">
+    <meta property="og:description" content="VC Meets @ Hub71 Impact. Empowering today. Impacting tomorrow.">
+    <meta property="og:type" content=object>
+    <meta property="og:image" content="{{asset('images/social_share.jpg')}}">
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
