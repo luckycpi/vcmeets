@@ -135,7 +135,7 @@
 
                                     <a href="#" class="btn btn-success rounded rounded-pill glow-on-hover interested {{$startup->votes->count() > 0? 'voted' : ''}}"
                                        data-id="{{$startup->id}}">
-                                        {{$startup->votes->count() > 0? __("Not Interested") : __("I'm Interested")}}
+                                        {{$startup->votes->count() > 0? __("Interested") : __("I'm Interested")}}
                                     </a>
 
                                 </div>
@@ -175,7 +175,7 @@
                 let $id = $(this).data('id');
                 let $card = $('#card-' + $id);
                 let $vote_btn = $(this);
-                let $btn_txt = "Not Interested";
+                let $btn_txt = "Interested";
                 let $url = "{{route('vote')}}";
 
                 if($vote_btn.hasClass('voted')) {
