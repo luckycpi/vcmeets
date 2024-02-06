@@ -8,7 +8,7 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-12 text-end">
-                        <a href="#">
+                        <a href="{{route('home')}}">
                             <img src="{{asset('images/hub71-logo.png')}}" alt="Hub71 Logo" class="logo"/>
                         </a>
                     </div>
