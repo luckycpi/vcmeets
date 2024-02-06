@@ -1,0 +1,60 @@
+.login-page {
+  background-image: url("../images/login-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+
+  label {
+    color: #333333;
+  }
+
+  .form-floating {
+
+    & > .form-control, & > .form-control:placeholder-shown ~ i, & > .form-control:placeholder-shown ~ label {
+      opacity: 0.4;
+    }
+
+    & > .form-control:focus, & > .form-control:not(:placeholder-shown) {
+      opacity: 0.8;
+    }
+
+    & > .form-control:focus ~ label {
+      opacity: 1;
+      color: #163472;
+    }
+
+    & > .form-control, & > .form-control-plaintext, & > .form-select {
+      min-height: unset;
+      height: 3rem;
+      padding-left: 44px;
+      border-radius: 25px;
+    }
+
+    label {
+      line-height: 16px;
+      padding-left: 50px;
+    }
+
+    & > .form-control:not(:placeholder-shown) ~ label::after, & > .form-control:focus ~ label::after {
+      background-color: transparent;
+    }
+
+    i {
+      left: 20px;
+      padding-top: 2px;
+      top: 50%;
+      position: absolute;
+      color: #666;
+      font-size: 20px;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+  }
+  .invalid-feedback {
+    position: absolute;
+    bottom: -20px;
+    color: #FFD400;
+    left: 20px;
+  }
+}

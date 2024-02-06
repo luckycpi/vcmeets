@@ -1,0 +1,24 @@
+{
+  "resources/fonts/rocgrotesk-light.otf": {
+    "file": "assets/rocgrotesk-light-Xzn3fpG1.otf",
+    "src": "resources/fonts/rocgrotesk-light.otf"
+  },
+  "resources/images/footer.png": {
+    "file": "assets/footer-A8LfC6iU.png",
+    "src": "resources/images/footer.png"
+  },
+  "resources/images/login-bg.jpg": {
+    "file": "assets/login-bg-xIL-MTxA.jpg",
+    "src": "resources/images/login-bg.jpg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-Y_MuImAH.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-5Qj7DuaS.css",
+    "isEntry": true,
+    "src": "resources/sass/app.scss"
+  }
+}

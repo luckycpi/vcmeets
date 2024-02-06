@@ -1,0 +1,150 @@
+.inner-page {
+  //font-family: roc-grotesk, sans-serif;
+
+  h1 {
+    color: #ffffff;
+    font-size: 48px;
+    //font-family: 'roc-grotesk', sans-serif;
+    &.header-text {
+      margin-top: 70px;
+    }
+  }
+
+  .logo-img {
+    min-height: 220px;
+  }
+
+  .card {
+    font-size: 12px;
+    .logo-img, h4, h5, p, span {
+      opacity: 1;
+      transition: all;
+      transition-duration: 2s;
+    }
+
+    .loader {
+      top: 50%;
+      right: 50%;
+      transform: translate(50%,-50%);
+      color: #DB4F33;
+    }
+
+    &.voted {
+      .logo-img, h4, h5, p, span {
+        filter: grayscale(1);
+        color: #212529bf;
+        opacity: 0.5;
+        transition: all;
+        transition-duration: 2s;
+      }
+      .interested, .interested:after {
+        background-color: #00AEEF;
+      }
+    }
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  h5, h4 {
+    color: #1B6AD5;
+    margin-bottom: 5px;
+  }
+
+  h5 {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  .btn-liquid {
+    display: inline-block;
+    position: relative;
+    width: 220px;
+    height: 40px;
+
+    border-radius: 27px;
+
+    color: #fff;
+    font: 700 14px/60px "Droid Sans", sans-serif;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .btn-liquid canvas {
+    top: -40px;
+  }
+
+  .glow-on-hover {
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #3BD292;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+
+  }
+
+  .glow-on-hover:before {
+    content: '';
+    /*background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);*/
+    background: linear-gradient(45deg, #104EF5, #3BD292, #00AEEF, #6B43C9, #FFD400, #DB4F33, #7a00ff, #ff00c8, #104EF5);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 25px;
+  }
+
+  .glow-on-hover:active {
+    color: #104EF5;
+  }
+
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+
+  .glow-on-hover:hover:before {
+    opacity: 1;
+  }
+
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #3BD292;
+    left: 0;
+    top: 0;
+    border-radius: 25px;
+  }
+
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .pagination {
+    margin-top: 50px;
+    justify-content: center;
+  }
+}
