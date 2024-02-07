@@ -24,6 +24,9 @@
 
   .logo-holder {
     background-color: #ffffff;
+    @media only screen and (max-width: 500px) {
+      min-height: 250px;
+    }
   }
 
   .card {
@@ -61,6 +64,10 @@
 
   .card-img img {
     max-height: 190px;
+    max-width: 85%;
+    @media only screen and (max-width: 500px) {
+      max-width: 75%;
+    }
   }
 
   h5, h4 {
