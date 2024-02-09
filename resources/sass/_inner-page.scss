@@ -1,10 +1,9 @@
 .inner-page {
-  //font-family: roc-grotesk, sans-serif;
 
   h1 {
     color: #ffffff;
     font-size: 48px;
-    //font-family: 'roc-grotesk', sans-serif;
+    font-weight: 200;
     &.header-text {
       margin-top: 70px;
     }
@@ -15,6 +14,10 @@
         margin-top: 10px;
       }
     }
+
+      @media only screen and (min-width: 1200px){
+          font-size: 64px;
+      }
 
   }
 
